@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .video-docker video {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .video-docker::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .video-content {
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav
+        class="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200  shadow-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#home" class="flex items-center">
+                <img src="#" class="h-8 mr-3" alt="Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">Strides</span>
+            </a>
+            <div class="flex md:order-2">
+                <button id="navbar-toggle" data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white ">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
+        <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+            <video class="min-w-full min-h-full absolute object-cover" src="https://cuono.dev/video1.mp4"
+                type="video/mp4" autoplay muted loop></video>
+        </div>
+        <div class="video-content space-y-2">
+            <h1 class="font-light text-6xl">Transforming Industries, Enriching Lives</h1>
+            <h3 class="font-light text-3xl">At Strides.inc, we deliver exceptional solutions across key industries to
+                drive progress and improve lives globally. Explore our impact in pharmaceuticals, chemicals, energy, and
+                the food sector</h3>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="text-gray-600 body-font bg-white ">
+        <div class="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow mt-5 md:mt-0   md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1
+                    class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900  sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                    About Us
+                </h1>
+                <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed ">
+                    Strides.inc, based in India, operates across four critical sectors: Pharmaceuticals, Chemicals,
+                    Energy, and Food. With a commitment to innovation and sustainability, we strive to enhance the
+                    quality of life worldwide.
+                </p>
+                <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed "> Mission Statement: To provide quality-driven
+                    solutions that enrich lives and create a sustainable future.</p>
+                <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed "> Vision Statement: To lead with integrity and
+                    innovation, adding value across industries for global betterment.</p>
+                <p class="mb-8 md:pl-0  pl-2 pr-2 leading-relaxed "> Core Values: Quality, Innovation, Integrity, and
+                    Sustainability.</p>
+
+
+            </div>
+            <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
+                <img class="object-cover object-center rounded" alt="hero"
+                    src="https://www.svgrepo.com/show/490900/hot-air-balloon.svg">
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+        <h1
+            class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900  sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+            Our Key Focus Areas
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-5">
+
+            <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url(https://media.gettyimages.com/photos/at-the-the-network-tolo-televised-debate-dr-abdullah-abdullah-with-picture-id1179614034?k=6&amp;m=1179614034&amp;s=612x612&amp;w=0&amp;h=WwIX3RMsOQEn5DovD9J3e859CZTdxbHHD3HRyrgU3A8=);">
+                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
+                </div>
+                <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                    <div class="text-white font-regular flex flex-col justify-start">
+                        <span class="text-3xl leading-0 font-semibold">Pharmaceuticals</span>
+                    </div>
+                </div>
+                <main class="p-5 z-10">
+                    <a href="#"
+                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">
+                        Strides.inc is committed to improving healthcare with high-quality APIs, innovative
+                        formulations, and precise manufacturing practices, meeting global health standards.
+                    </a>
+                </main>
+
+            </div>
+
+            <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url(https://media.gettyimages.com/photos/ashraf-ghani-afghanistans-president-speaks-at-the-council-on-foreign-picture-id850794338?k=6&amp;m=850794338&amp;s=612x612&amp;w=0&amp;h=b_XBw5S38Cioslqr6VL3e36cWQU205IsInqDXZpDOD4=);">
+                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
+                </div>
+                <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                    <div class="text-white font-regular flex flex-col justify-start">
+                        <span class="text-3xl leading-0 font-semibold">Chemicals </span>
+                    </div>
+                </div>
+                <main class="p-5 z-10">
+                    <a href="#"
+                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Delivering
+                        specialty and industrial chemicals tailored to diverse industries, we prioritize innovation,
+                        safety, and sustainability.
+                    </a>
+                </main>
+
+            </div>
+
+            <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url(https://media.gettyimages.com/photos/afghan-president-ashraf-ghani-arrives-to-the-welcoming-ceremony-the-picture-id694155252?k=6&amp;m=694155252&amp;s=612x612&amp;w=0&amp;h=IIJPetzJL-hAgPkE4hm2wUKvO4YOav8jJp484CgLEUs=);">
+                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
+                </div>
+                <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                    <div class="text-white font-regular flex flex-col justify-start">
+                        <span class="text-3xl leading-0 font-semibold">Energy</span>
+                    </div>
+                </div>
+                <main class="p-5 z-10">
+                    <a href="#"
+                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Focused
+                        on renewable and sustainable energy solutions, including solar energy, biofuels, and
+                        eco-friendly practices that empower a cleaner tomorrow.
+                    </a>
+                </main>
+
+            </div>
+
+            <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center"
+                style="height: 450px; background-image:url(https://media.gettyimages.com/photos/afghan-president-ashraf-ghani-speaks-during-a-gathering-in-jalalabad-picture-id1205021905?k=6&amp;m=1205021905&amp;s=612x612&amp;w=0&amp;h=nwAH1XuZxF_H4f6LfHv-lgqtZe0h1tVFXfzhpMwFqao=);">
+                <div class="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900">
+                </div>
+                <div class="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
+                    <div class="text-white font-regular flex flex-col justify-start">
+                        <span class="text-3xl leading-0 font-semibold">Food Sector (Spices)</span>
+                    </div>
+                </div>
+                <main class="p-5 z-10">
+                    <a href="#"
+                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Sourcing
+                        the finest spices and food products to enhance culinary experiences worldwide. Our offerings are
+                        ethically sourced and of unmatched quality.
+                    </a>
+                </main>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <section class="bg-gray-100">
+
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+            <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Visit Our Location</h2>
+                <p class="mt-4 text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="mt-16 lg:mt-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+                            width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div>
+                        <div class="max-w-full mx-auto rounded-lg overflow-hidden">
+                            <div class="px-6 py-4">
+                                <h3 class="text-lg font-medium text-gray-900">Our Address</h3>
+                                <p class="mt-1 text-gray-600">Strides.inc Headquarters, India. </p>
+                            </div>
+                            <div class="border-t border-gray-200 px-6 py-4">
+                                <h3 class="text-lg font-medium text-gray-900">Hours</h3>
+                                <p class="mt-1 text-gray-600">Monday - Friday: 9am - 5pm</p>
+                                <p class="mt-1 text-gray-600">Saturday: 10am - 4pm</p>
+                                <p class="mt-1 text-gray-600">Sunday: Closed</p>
+                            </div>
+                            <div class="border-t border-gray-200 px-6 py-4">
+                                <h3 class="text-lg font-medium text-gray-900">Contact</h3>
+                                <p class="mt-1 text-gray-600">Email: info@example.com</p>
+                                <p class="mt-1 text-gray-600">Phone: +1 23494 34993</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.getElementById('navbar-toggle');
+            const menu = document.getElementById('navbar-sticky');
+
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
