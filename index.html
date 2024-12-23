@@ -23,15 +23,120 @@
 }
 
 .mission-highlight {
-    background-color: #FFC107;
+    background-color: #03a9f4;
     display: inline-block;
     padding: 5px 10px;
-    color: #000;
+    color: #fff;
     border-radius: 4px;
 }
 /*Misson Vision Core Values Ends Here */
 
 
+/*Read More Button CSS Starts Here*/
+.read-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  background: #03a9f4;
+  color: #fff;
+}
+
+.read-button-text {
+  transform: translateX(15px);
+  font-size: 1.2em;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.iconer {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.read-button:hover .read-button-text {
+  transform: translateX(0px);
+}
+
+.read-button:hover .iconer {
+  transform: translateY(0px);
+}
+/*Read More Button CSS Ends Here*/
+
+
+/*Partner With Us CSS Starts Here*/
+.partner-section {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%; /* Updated to take the full width */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.partner-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.partner-content h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.partner-content p {
+    margin: 20px 0;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.partner-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.partner-content .btn:hover {
+    background-color: #5848d6;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .partner-section {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .image-container img {
+        max-width: 80%; /* Shrink image width */
+        margin-top: 10px;
+    }
+}
+/*Partner With Us CSS Ends Here*/
 
 
 /*Contact US Starts Here*/
@@ -555,65 +660,6 @@
 /*Contact US Ends Here*/
 
 
-
-/*partner-starts-here*/
-.partner-section {
-            background: #ffffff;
-            border-radius: 10px;
-            overflow: hidden;
-            max-width: 800px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        .partner-content {
-            padding: 20px;
-            flex: 1;
-        }
-
-        .partner-content h1 {
-            font-size: 2rem;
-            color: #333;
-        }
-
-        .partner-content p {
-            margin: 20px 0;
-            color: #555;
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-
-        .partner-content .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #6c63ff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .partner-content .btn:hover {
-            background-color: #5848d6;
-        }
-
-        .image-container {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
-            padding: 20px;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-        }
-/*partner-ends-here*/
-
         .video-docker video {
             top: 50%;
             left: 50%;
@@ -888,7 +934,7 @@
             </div>
             <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
                 <img class="object-cover object-center rounded" alt="hero"
-                    src="https://www.svgrepo.com/show/209399/molecules-molecular.svg">
+                    src="images/about.jpg">
             </div>
         </div>
     </section>
@@ -914,11 +960,15 @@
                     </div>
                 </div>
                 <main class="p-5 z-10">
-                    <a href="Pharmaceutical.html"
-                        class="text-md tracking-tight font-medium leading-7 font-regular text-white   hover:opacity-75 transition-opacity duration-300">
-                        Strides.inc is committed to improving healthcare with high-quality APIs, innovative
-                        formulations, and precise manufacturing practices, meeting global health standards.
-                    </a>
+                    <!--Read More Button-->
+
+<a class="read-button" href="Pharmaceutical.html">
+  <p class="read-button-text">Read More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
                 </main>
             </div>
             <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
@@ -931,11 +981,15 @@
                     </div>
                 </div>
                 <main class="p-5 z-10">
-                    <a href="Chemicals.html"
-                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:opacity-75 transition-opacity duration-300">Delivering
-                        specialty and industrial chemicals tailored to diverse industries, we prioritize innovation,
-                        safety, and sustainability.
-                    </a>
+                    <!--Read More Button-->
+
+<a class="read-button" href="Chemicals.html">
+  <p class="read-button-text">Read More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
                 </main>
             </div>
             <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
@@ -948,11 +1002,15 @@
                     </div>
                 </div>
                 <main class="p-5 z-10">
-                    <a href="Energy.html"
-                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:opacity-75 transition-opacity duration-300">Focused
-                        on renewable and sustainable energy solutions, including solar energy, biofuels, and
-                        eco-friendly practices that empower a cleaner tomorrow.
-                    </a>
+                    <!--Read More Button-->
+
+<a class="read-button" href="Energy.html">
+  <p class="read-button-text">Read More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
                 </main>
             </div>
             <div class="hover:opacity-75 transition-opacity duration-300  relative w-full flex items-end justify-start text-left bg-cover bg-center"
@@ -965,11 +1023,15 @@
                     </div>
                 </div>
                 <main class="p-5 z-10">
-                    <a href="Food.html"
-                        class="text-md tracking-tight font-medium leading-7 font-regular text-white hover:opacity-75 transition-opacity duration-300">Sourcing
-                        the finest spices and food products to enhance culinary experiences worldwide. Our offerings are
-                        ethically sourced and of unmatched quality.
-                    </a>
+                    <!--Read More Button-->
+
+<a class="read-button" href="Food.html">
+  <p class="read-button-text">Read More</p> 
+<p class="iconer">
+<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>		</svg>
+</p>  
+</a>
                 </main>
             </div>
         </div>
@@ -1119,9 +1181,9 @@
 <!--Why Choose Us Ends Here-->
 
 
-<!-- Partner With Us Section Starts Here 
+<!-- Partner With Us HTML Starts Here -->
 <section>
-  <div class="flex max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+  <div class="flex max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
   
 <div class="partner-section ">
   <div class="partner-content">
@@ -1137,7 +1199,7 @@
 </div>
 
 </section>
-Partner With Us Section Ends Here-->
+<!-- Partner With Us HTML Ends Here-->
 
 
 
